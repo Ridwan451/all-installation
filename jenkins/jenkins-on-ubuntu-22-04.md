@@ -20,7 +20,7 @@ Sebelum menginstal Jenkins di Ubuntu 22.04, pastikan sistem Anda memenuhi prasya
      ```bash
      java -version
      ```  
-    ![java version](images/java-version.png)
+     ![java version](images/java-version.png)
 
 5. **Menambahkan Repository Jenkins**  
    - Tambahkan kunci GPG dan repositori resmi Jenkins:  
@@ -57,7 +57,7 @@ Sebelum menginstal Jenkins di Ubuntu 22.04, pastikan sistem Anda memenuhi prasya
      ```bash
      sudo systemctl status jenkins
      ```
-    ![status jenkins](images/status-jenkins.png)
+     ![status jenkins](images/status-jenkins.png)
 
 ### Menyelesaikan Instalasi Jenkins di Ubuntu 22.04
 
@@ -73,25 +73,25 @@ Sebelum menginstal Jenkins di Ubuntu 22.04, pastikan sistem Anda memenuhi prasya
      ```bash
      cat /var/lib/jenkins/secrets/initialAdminPassword
      ```
-    ![unlock jenkins](images/unlock-jenkins.png)
+     ![unlock jenkins](images/unlock-jenkins.png)
 
 3. **Install Plugin**  
    - Kemudian klik tab "Install suggested plugins".
-    ![install plugin](images/install-plugin.png)
+     ![install plugin](images/install-plugin.png)
 
    - Instalasi Jenkins bersama dengan plugin yang disarankan akan dimulai.
-    ![view install plugin](images/view-install-plugin.png)
+     ![view install plugin](images/view-install-plugin.png)
 
 4. **Membuat User**  
    - Setelah instalasi selesai, Anda akan diminta untuk memasukkan nama pengguna, kata sandi, nama lengkap, dan email Anda.
-    ![create user](images/create-user.png)
+     ![create user](images/create-user.png)
 
 5. **Jenkins URL**  
    - Setelah menyimpan kredensial ini, jendela berikutnya akan menjadi URL aplikasi Anda. Jendela ini untuk mengonfirmasi apakah domain sudah benar dalam konfigurasi Apache. Klik tombol "Save and Finish".
-    ![jenkins url](images/jenkins-url.png)
+     ![jenkins url](images/jenkins-url.png)
 
 5. **Jenkins Siap Digunakan**  
    - Setelah ini, akan ada tombol untuk "Start using Jenkins". Klik tombol itu dan Anda akan diarahkan ke situs web Administrator Jenkins.
-    ![jenkins url](images/jenkins-ready.png)
+     ![jenkins url](images/jenkins-ready.png)
    
-    ![jenkins dashboard](images/jenkins-dashboard.png)
+     ![jenkins dashboard](images/jenkins-dashboard.png)
