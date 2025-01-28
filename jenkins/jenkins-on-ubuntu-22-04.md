@@ -77,6 +77,7 @@ Sebelum menginstal Jenkins di Ubuntu 22.04, pastikan sistem Anda memenuhi prasya
 
 3. **Install Plugin**  
    - Kemudian klik tab "Install suggested plugins".
+   
      ![install plugin](images/install-plugin.png)
 
    - Instalasi Jenkins bersama dengan plugin yang disarankan akan dimulai.
