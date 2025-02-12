@@ -95,3 +95,8 @@ Install paket Kubernetes:
 sudo dnf install -y kubelet kubeadm kubectl
 sudo systemctl enable --now kubelet
 ```
+
+cek version
+```bash
+kubectl version
+```
