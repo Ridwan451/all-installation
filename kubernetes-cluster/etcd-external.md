@@ -24,6 +24,8 @@ tar -xvf etcd-${ETCD_VERSION}-linux-${ARCH}.tar.gz
 
 # Pindahkan binary ke /usr/local/bin
 sudo mv etcd-${ETCD_VERSION}-linux-${ARCH}/etcd* /usr/local/bin/
+sudo chmod +x /usr/local/bin/etcd /usr/local/bin/etcdctl
+export PATH=$PATH:/usr/local/bin
 
 # Verifikasi instalasi
 etcd --version
