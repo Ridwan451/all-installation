@@ -13,6 +13,9 @@ Matikan Swap
 ```bash
 sudo swapoff -a
 sudo sed -i '/swap/d' /etc/fstab
+
+sudo setenforce 0
+sudo sed -i 's/SELINUX=enforcing/SELINUX=permissive/' /etc/selinux/config
 ```
 
 Do this on the workers only.

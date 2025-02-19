@@ -93,6 +93,7 @@ EOF
 Jalankan service etcd:
 ```bash
 sudo setenforce 0
+sudo sed -i 's/SELINUX=enforcing/SELINUX=permissive/' /etc/selinux/config
 sudo systemctl daemon-reload
 sudo systemctl enable --now etcd
 sudo systemctl restart etcd
