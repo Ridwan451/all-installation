@@ -92,8 +92,10 @@ EOF
 ### **Jalankan dan Aktifkan etcd**
 Jalankan service etcd:
 ```bash
+sudo setenforce 0
 sudo systemctl daemon-reload
 sudo systemctl enable --now etcd
+sudo systemctl restart etcd
 ```
 Verifikasi statusnya:
 ```bash
