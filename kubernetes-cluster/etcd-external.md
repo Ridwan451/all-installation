@@ -9,7 +9,7 @@ sudo dnf install -y vim git curl wget bash-completion
 
 ---
 
-### ** Install etcd di VM-ETCD**
+### **Install etcd di VM-ETCD**
 #### **A. Unduh dan Install etcd**
 Jalankan perintah berikut di **vm-etcd** untuk mengunduh dan menginstal etcd versi terbaru yang kompatibel:  
 ```bash
@@ -43,7 +43,7 @@ sudo chown -R etcd:etcd /var/lib/etcd
 
 ---
 
-### ** Konfigurasi etcd**
+### **Konfigurasi etcd**
 #### **A. Tentukan IP VM-ETCD**
 Jalankan:
 ```bash
@@ -87,7 +87,7 @@ EOF
 
 ---
 
-### ** Jalankan dan Aktifkan etcd**
+### **Jalankan dan Aktifkan etcd**
 Jalankan service etcd:
 ```bash
 sudo systemctl daemon-reload
@@ -110,7 +110,7 @@ Output yang benar:
 
 ---
 
-### ** Konfigurasi Kubernetes agar Menggunakan etcd External**
+### **Konfigurasi Kubernetes agar Menggunakan etcd External**
 Di setiap **control-plane (control-plane-1 dan control-plane-2)**, edit file **`/root/kubeadm-config.yaml`** agar menggunakan **vm-etcd**:
 ```yaml
 etcd:
