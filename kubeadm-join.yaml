@@ -1,0 +1,23 @@
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: JoinConfiguration
+nodeRegistration:
+  name: "control-plane-2"
+  kubeletExtraArgs:
+    node-ip: "172.25.214.3"
+discovery:
+  bootstrapToken:
+    token: "jtaaof.xoyz04jy4nm7i1qg"
+    apiServerEndpoint: "control-plane-1:6443"
+    caCertHashes:
+      - "sha256:7cbdf61621d5bead213267bcc5f2c8645bad2bed995c14c4b6300b7edc30c4a4"
+controlPlane:
+  localAPIEndpoint:
+    advertiseAddress: "172.25.214.3"
+    bindPort: 6443
+etcd:
+  external:
+    endpoints:
+      - "https://172.25.214.4:2379"
+    caFile: "/etc/etcd/certs/etcd-ca.crt"
+    certFile: "/etc/etcd/certs/etcd-client.crt"
+    keyFile: "/etc/etcd/certs/etcd-client.key"
